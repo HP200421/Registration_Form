@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            Registration
+        </div>
+        <form onsubmit="validRegistration()">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">
+                        Full Name:
+                    </span>
+                    <input type="text" id="fullname" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                    <span class="details">
+                        Last Name:
+                    </span>
+                    <input type="text" id="lastname" placeholder="Enter your last name">
+                </div>
+                <div class="input-box">
+                    <span class="details">
+                        Email:
+                    </span>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="input-box">
+                    <span class="details">
+                        Phone Number:
+                        <select id="countryCode" name="countryCode">
+                            <option value="+1">+1</option>
+                            <option value="+91">+91</option>
+                            <option value="+44">+44</option>
+                            <!-- Add more country codes as needed -->
+                          </select>
+                    </span>
+                    <input type="text" id="mobileNumber" placeholder="Enter your number" pattern:"[0-9]{10}">
+                </div>
+                <div class="input-box">
+                    <span class="details">
+                        Password:
+                    </span>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="input-box">
+                    <span class="details">
+                        Confirm Password:
+                    </span>
+                    <input type="text" placeholder="Confirm password">
+                </div>
+                <div class="input-box">
+                    <span class="details">
+                        Date:
+                    </span>
+                    <input type="Date" >
+                </div>
+            </div>
+            <div class="gender-details">
+                <span class="gender-title">
+                    Gender:
+                </span>
+                <div>
+                <input type="radio">
+                <label>Male</label>
+                <input type="radio">
+                <label>Female</label>
+                <input type="radio">
+                <label>Prefer Not to Say</label>
+            </div>
+            <div class="input-box">
+            <label><b>Languages Known:</b></label>
+            <label>
+              <input type="checkbox" name="languages" value="english"> English
+            </label>
+            <label>
+              <input type="checkbox" name="languages" value="marathi"> Marathi
+            </label>
+            <label>
+              <input type="checkbox" name="languages" value="hindi"> Hindi
+            </label>
+            <label>
+              <input type="checkbox" name="languages" value="tamil"> Tamil
+            </label>
+            </div>
+            </div>
+            <div class="button" style="height:41px">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(135deg,#71b7e6,#e8c2f7);
+}
+
+.container{
+    align-self: center;
+    background-color: white;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 7px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+    width: calc(100% / 2 - 20px);
+}
+
+form .user-details .input-box .details{
+    font-weight: bold;
+}
+
+form .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+form .user-details .input-box input:focus,
+form .user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+form .gender-details .gender-title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form .button{
+    height: 26px;
+    color: #9b59b6;
+}
+
+form .button input{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: large;
+    padding: 1px;
+    border-radius: 5PX;
+    background: linear-gradient(135deg,#71b7e6,#e8c2f7);
+}
+
+form .button input:hover{
+    cursor: pointer;
+    background: linear-gradient(-135deg,#71b7e6,#e8c2f7);
+}
